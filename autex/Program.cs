@@ -16,7 +16,7 @@
             var config = SpeechConfig.FromSubscription("940929eb2cfe4158a6e1229959726d4e", "eastus");
             config.RequestWordLevelTimestamps();
 
-            using (var audioInput = AudioConfig.FromWavFileInput("C:/Users/sjhou/OneDrive/Documents/whosonfirst.wav"))
+            using (var audioInput = AudioConfig.FromWavFileInput("/Users/evan/codefellows/personalProjects/autex/autex/assets/whosonfirst.wav"))
             using (var recognizer = new SpeechRecognizer(config, audioInput))
             {
                 Console.WriteLine("Recognizing first result...");
